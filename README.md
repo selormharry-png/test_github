@@ -72,7 +72,7 @@ Settings are in `bootstrap/variables.tf`:
 |----------|---------|-------------|
 | `aws_bucket_name` | `bootstrap124` | Globally unique S3 bucket name |
 | `aws_region` | `eu-central-1` | AWS region |
-| `aws_profile_name` | `Kloud-Messiah` | Local AWS CLI profile |
+| `aws_profile_name` | `safe-safe` | Local AWS CLI profile |
 
 The bucket is created with:
 - versioning, so previous state versions can be recovered
