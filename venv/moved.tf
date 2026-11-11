@@ -1,0 +1,6 @@
+# moved {
+#   from = aws_instance.web
+#   to  = aws_instance.web_server
+# }
+
+ 
