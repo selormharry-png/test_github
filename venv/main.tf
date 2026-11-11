@@ -24,6 +24,7 @@ resource "aws_ebs_volume" "data" {
   size              = var.data_volume_size
   type              = "gp3"
   encrypted         = true
+  kms_key_id        = aws_kms_key.ebs.arn
 
   tags = {
     Name = "web-server-data"
