@@ -75,8 +75,8 @@ data "aws_iam_policy_document" "ebs_kms" {
   statement {
     sid       = "EnableRootAccountPermissions"
     effect    = ""
-    actions   = ["kms:*"]
-    resources = ["*"]
+    actions   = ["kms"]
+    resources = [""]
 
     principals {
       type        = "AWS"
