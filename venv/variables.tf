@@ -3,3 +3,10 @@ variable "instance_type" {
   type        = string
   description = "instance type"
 }
+
+
+variable "data_volume_size" {
+  default     = "10"
+  type        = number
+  description = "size of the extra data volume in GiB"
+}
