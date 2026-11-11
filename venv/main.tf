@@ -74,7 +74,7 @@ data "aws_caller_identity" "current" {}
 data "aws_iam_policy_document" "ebs_kms" {
   statement {
     sid       = "EnableRootAccountPermissions"
-    effect    = "Allow"
+    effect    = ""
     actions   = ["kms:*"]
     resources = ["*"]
 
