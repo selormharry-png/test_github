@@ -8,3 +8,7 @@ resource "aws_instance" "web_server" {
     http_put_response_hop_limit = 1
   }
 }
+
+resource "aws_instance" "web_server" {
+  monitoring = true
+}
