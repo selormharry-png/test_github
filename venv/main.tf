@@ -68,6 +68,7 @@ resource "aws_iam_instance_profile" "web_server" {
   role = aws_iam_role.web_server.name
 }
 
+data "aws_caller_identity" "current" {}
 
 # Key policy: account administrators keep full control of the key
 data "aws_iam_policy_document" "ebs_kms" {
